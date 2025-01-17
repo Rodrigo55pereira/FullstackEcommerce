@@ -5,14 +5,6 @@ import { Button, ButtonText } from '@/components/ui/button'
 
 
 export default function HomeScreen() {
-    
-    return(
-        <Button variant='outline'>
-            <ButtonText>Press me</ButtonText>
-        </Button>
-    )
-    
-    /*
     return (
 
         <FlatList
@@ -20,7 +12,8 @@ export default function HomeScreen() {
             renderItem={({ item }) => 
                 <ProductListItem product={item} />
             }
+            contentContainerClassName='gap-2'
+            numColumns={2}
         />
     )
-    */
 }
